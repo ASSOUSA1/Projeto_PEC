@@ -24,12 +24,15 @@ ficheiros_entrega/
 │   ├── Juntar_dataset.py
 │   ├── remover_datasets.py
 │   └── teste_download_dataset.py
-└── csv
-    ├── dataset_train_shuffled.csv
-    ├── dataset_val.csv
-    ├── labels_final_test.csv
-    ├── labels_final_train_shuffled.csv
-    └── labels_final_val.csv
+├── csv
+│   ├── dataset_train_shuffled.csv
+│   ├── dataset_val.csv
+│   ├── labels_final_test.csv
+│   ├── labels_final_train_shuffled.csv
+│   └── labels_final_val.csv
+├── video_teste_qualitativo
+    ├── video_teste_analisado.mp4
+    └── video_teste.mp4
 ```
 
 ### `código_modelos/`
@@ -66,6 +69,15 @@ Ficheiros de metadados com os nomes das imagens e respetivas etiquetas, usados p
 | `labels_final_train_shuffled.csv` | Etiquetas finais de treino, após consolidação dos datasets de intrusões. |
 | `labels_final_val.csv` | Etiquetas finais de validação de intrusões. |
 | `labels_final_test.csv` | Etiquetas finais de teste de intrusões. |
+
+### `video_teste_qualitativo/`
+Video utilizado no teste qualitativo:
+
+| Ficheiro | Descrição |
+|---|---|
+| `video_teste_analisado.mp4` | Video analisado eplo modelo unificado. |
+| `video_teste.mp4` | Recorte do video original, apenas da parte onde aparece fumo/fogo e pessoas. |
+
 
 ---
 
