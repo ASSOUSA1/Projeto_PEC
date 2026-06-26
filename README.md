@@ -30,7 +30,7 @@ ficheiros_entrega/
 │   ├── labels_final_test.csv
 │   ├── labels_final_train_shuffled.csv
 │   └── labels_final_val.csv
-├── video_teste_qualitativo
+└── video_teste_qualitativo
     ├── video_teste_analisado.mp4
     └── video_teste.mp4
 ```
@@ -75,7 +75,7 @@ Video utilizado no teste qualitativo:
 
 | Ficheiro | Descrição |
 |---|---|
-| `video_teste_analisado.mp4` | Video analisado eplo modelo unificado. |
+| `video_teste_analisado.mp4` | Video analisado pelo modelo unificado. |
 | `video_teste.mp4` | Recorte do video original, apenas da parte onde aparece fumo/fogo e pessoas. |
 
 
