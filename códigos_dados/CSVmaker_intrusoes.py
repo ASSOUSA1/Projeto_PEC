@@ -27,7 +27,6 @@ def gerar_tabela_labels(pasta_imagens, pasta_labels, nome_ficheiro_saida):
         labels_encontrados = set() 
         
     #Ler o ficheiro de labels se existir
-    #Vê todas as linhas e retira o primeiro argumento (0 ou 1)
         if os.path.exists(caminho_label):
             try:
                 with open(caminho_label, 'r', encoding='utf-8') as f:
@@ -36,7 +35,7 @@ def gerar_tabela_labels(pasta_imagens, pasta_labels, nome_ficheiro_saida):
                         if linha:
                             partes = linha.split()
                             if len(partes) > 0:
-                                # Adiciona o primeiro caracter (0 ou 1) ao conjunto
+                                # Adiciona o primeiro caracter (0 ou 1) ao conjunto, cada linha do .txt YOLO começa com o id da classe detetada
                                 labels_encontrados.add(partes[0])
                             
             except Exception as erro:

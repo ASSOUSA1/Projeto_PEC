@@ -17,7 +17,7 @@ def gerar_tabela_labels(pasta_imagens, pasta_labels, nome_ficheiro_saida):
     ficheiros = os.listdir(pasta_imagens)
     print(f"A processar {len(ficheiros)} ficheiros...")
 
-    #Loop para analisar cada ficheiro de imagem e o sue label
+    #Loop para analisar cada ficheiro de imagem e a sua label
 
     for nome_imagem in tqdm(ficheiros, desc="A processar"):
         
