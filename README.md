@@ -88,10 +88,11 @@ Devido ao volume de dados e ao tamanho dos checkpoints treinados, estes ficheiro
   [Download](https://filesender.fccn.pt/?s=download&token=dde39e82-da0e-4663-ba8d-5f13d6d5f27b)
   > Os modelos finais não foram incluídos no GitHub por serem demasiado pesados para o repositório.
 
-> ⚠️/ Os links do FCCN FileSender estão disponíveis até 25/8/2026
----/
->
-> ## 🔧 Instalação de Dependências
+> ⚠️ Os links do FCCN FileSender estão disponíveis até 25/8/2026
+
+---
+
+## 🔧 Instalação de Dependências
 
 Os scripts deste projeto requerem Python 3 e as seguintes bibliotecas. Podes instalar tudo de uma vez com:
 
@@ -102,36 +103,6 @@ pip install torch torchvision numpy matplotlib polars pillow seaborn scikit-lear
 > 💡 Para treino com GPU (recomendado), instala a versão do PyTorch com suporte CUDA adequada ao teu sistema, seguindo as instruções em [pytorch.org/get-started](https://pytorch.org/get-started/locally/).
 
 As restantes bibliotecas importadas (`os`, `math`, `random`, `gc`, `time`, `datetime`, `copy`, `timeit`) fazem parte da biblioteca padrão do Python e não requerem instalação.
-
-<details>
-<summary>Imports completos usados nos scripts</summary>
-
-```python
-import torch
-from torch import nn, optim
-from torch.utils.data import DataLoader, Dataset
-from torchvision import transforms
-from torchvision.transforms import v2
-
-# Uteis
-import math
-import numpy as np
-import matplotlib.pyplot as plt
-import polars as pl
-import os
-import random  # Fixa a seed do Python built-in
-from PIL import Image
-timer = __import__('timeit').default_timer
-import seaborn as sns
-from sklearn.metrics import confusion_matrix
-from tqdm.auto import tqdm
-import gc
-import time
-from datetime import timedelta
-import copy
-```
-
-</details>
 
 ---
 
